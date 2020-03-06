@@ -21,6 +21,7 @@ When we're writing tests, we often have to clean up after ourselves after we're 
 
 - Release notes are [here](https://golang.org/doc/go1.14#testing)
 - Code samples are [here](./tests/cleanup_test.go)
+  - Run them with `go test -v cleanup_test.go`
 
 ## Log streaming
 
@@ -30,3 +31,4 @@ Sometimes it's more helpful to have the output streamed as it happens. Now, if y
 
 - Release notes are [here](https://golang.org/doc/go1.14#go-command) (see the "testing" header at the bottom of the section)
 - Code samples are [here](./tests/stream_test.go)
+  - Run them with `go test -v stream_test.go`
