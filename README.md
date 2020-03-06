@@ -2,6 +2,8 @@
 
 Welcome to the Go 1.14 Release Party!
 
+https://www.crowdcast.io/e/pdx-go-march-12-2020
+
 ## Loops
 
 Go 1.14 comes with a change in how the runtime does preemption of Goroutines.
