@@ -9,4 +9,5 @@ func TestCleanup(t *testing.T) {
 	t.Cleanup(func() {
 		t.Log("I'm cleaning up!")
 	})
+	t.Fatal("We're calling t.Fatal here. The cleanup function should still run though :)")
 }

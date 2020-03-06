@@ -12,7 +12,7 @@ Go 1.14 comes with a change in how the runtime does preemption of Goroutines.
 - Code samples are [here](./01-loop_preemption.go)
 
 ## Tests
- 
+
 Go 1.14 comes with two nice additions for testing. Previously, we had to implement this stuff ourselves and it was hard.
 
 ## Cleaning up
