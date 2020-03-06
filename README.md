@@ -32,3 +32,24 @@ Sometimes it's more helpful to have the output streamed as it happens. Now, if y
 - Release notes are [here](https://golang.org/doc/go1.14#go-command) (see the "testing" header at the bottom of the section)
 - Code samples are [here](./tests/stream_test.go)
   - Run them with `go test -v stream_test.go`
+
+## Overlapping interfaces
+
+Before 1.14, you couldn't do this:
+
+```go
+type Interface1 {
+    Hello()
+}
+
+type Interface2 {
+    Hello()
+}
+
+type Interface3 {
+    Interface1
+    Interface2
+}
+```
+
+But now you can!
