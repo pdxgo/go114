@@ -1,2 +1,3 @@
-# go114
-Code from the Go 1.14 Release Party
+# Go 1.14
+
+Welcome to the Go 1.14 Release Party!
