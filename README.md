@@ -9,7 +9,7 @@ https://www.crowdcast.io/e/pdx-go-march-12-2020
 Go 1.14 comes with a change in how the runtime does preemption of Goroutines.
 
 - Release notes are [here](https://golang.org/doc/go1.14#runtime)
-- Code samples are [here](./01-loop_preemption.go)
+- Code samples are [here](./preemption/main.go)
 
 ## Tests
 

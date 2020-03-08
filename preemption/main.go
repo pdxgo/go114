@@ -9,6 +9,8 @@ import (
 
 func f1() {
 	var f float64 = 1.0
+	// Going to get a lot of empty loops here in this function
+	// They will block in versions earlier than 1.14
 	for i := 0; i < 1000000000; i++ {
 		f = (f + float64(i)) / f
 	}
@@ -24,7 +26,11 @@ func f2() {
 
 func main() {
 	log.SetFlags(log.LstdFlags | log.Lmicroseconds)
+
+	// GOMAXPROCS is going to limit the work to just one thread to help illustrate
+	// what is going on behind the scenes
 	runtime.GOMAXPROCS(1)
+
 	go f2()
 	time.Sleep(300 * time.Millisecond)
 	go f1()
